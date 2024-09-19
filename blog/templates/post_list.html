@@ -3,14 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Posts</title>
+    <title>Welcome to the roundabout</title>
 </head>
 <body>
-    <h1>Blog Posts</h1>
+    <h1>Login</h1>
+    <h4>Username:</h4>
+    <input type="text">
+    <h4>Password:</h4>
+    <input type="text">
     <ul>
         {% for post in posts %}
         <li><a href="{% url 'post_detail' post.id}">{{ post.title }}</a></li>
         {% endfor %}
     </ul>
+    <h1>Register</h1>
+    <h4>Username:</h4>
+    <input type="text">
+    <h4>Password:</h4>
+    <input type="text">
+    <h4>Email:</h4>
+    <input type="text">
+    <h4>Gender:</h4>
+    <input type="text">
 </body>
 </html>
